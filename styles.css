@@ -58,6 +58,47 @@ body {
     background: #290505;
     transition: 0.5s;
 }
-.inicio{
+.Inicio {
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+
+video{
+    margin-left: 60px;
+}
+.tabla-1{
+    
+    width: auto;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgb(24, 24, 24);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.421);
+    max-width: 1030px;
+    margin-left: 60px;
+    margin-right: 60px;
     
 }
+
+td:hover {
+    background-color: rgb(47, 47, 47);
+    transition: 0.3s;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.fila-1{
+    background-color: #6a0c0c;
+    
+}
+th:hover{
+   background-color: #8d1111; 
+   transition: 0.3s;
+}
+th {
+    
+    color: rgb(255, 247, 247);
+}
+
