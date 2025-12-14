@@ -1,9 +1,17 @@
+:root{
+--gris-fondo: rgb(24, 24, 24);
+--rojo-medio: #a23232;
+--blanco: rgb(255, 255, 255);
+--rojo-fuerte: #671c1c;
+--rojo-oscuro: #290505;
+--sombra-roja: rgba(255, 0, 0, 0.421);
+}
 /* Modificaciones a nievl general en todas las paginas , puesto que son elementos comunes de todas las paginas */
 header {
     margin-top: -80px;
     font-family: "Commodus Greek", sans-serif;
-    background-color: #a23232;
-    color: rgb(255, 255, 255);
+    background-color: var(--rojo-medio);
+    color: var(--blanco);
     padding: 10px;
     text-align: center;
     justify-content: center;
@@ -26,10 +34,10 @@ body {
     
     font-family: "Segoe UI", Arial, sans-serif;
     color: var(--texto-principal);
-    background-color: rgb(24, 24, 24);
+    background-color: var(--gris-fondo);
     margin: 0;
     line-height: 1.6;
-    color: white;
+    color: var(--blanco);
     
 }
 footer{
@@ -37,7 +45,7 @@ footer{
     justify-content: center;
     margin-top: 30px;
     padding: 10px;
-    background-color: #671c1c;
+    background-color: var(--rojo-fuerte);
 }
 /* Menu compartido entre todas las paginas */
 .nav-menu ul {
@@ -45,7 +53,7 @@ footer{
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #671c1c;
+    background-color: var(--rojo-fuerte);
     display: flex;
     justify-content: center;
 }
@@ -59,12 +67,12 @@ footer{
 .nav-menu a {
     display: block;
     padding: 12px 18px;
-    color: white;
+    color: var(--blanco);
     text-decoration: none;
     
 }
 .nav-menu a:hover {
-    background: #290505;
+    background: var(--rojo-oscuro);
     transition: 0.5s;
 }
  /* Margenes de las distintas paginas , separadas por si hay que hacer cambios en alguna */
@@ -78,6 +86,11 @@ footer{
     margin-right: 50px;
     margin-bottom: 15px;
 }
+.Detalles{
+   margin-left: 60px;
+    margin-right: 50px;
+    margin-bottom: 15px;  
+}
 /* video de la pagina principal */
 video{
     margin-left: 60px;
@@ -88,8 +101,8 @@ video{
     width: auto;
     border-collapse: collapse;
     margin: 20px 0;
-    background-color: rgb(24, 24, 24);
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.421);
+    background-color: var(--gris-fondo);
+    box-shadow: 0 4px 8px var(--sombra-roja);
     max-width: 1030px;
     margin-left: 60px;
     margin-right: 60px;
@@ -146,9 +159,10 @@ th {
 }
 
 .img-juegos :is(h3) {
-
+    color: white;
+    font-weight: bold;
     text-align: center;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px rgb(255, 255, 255)0.411;
     border-radius: 6px
     
 }
@@ -161,7 +175,17 @@ th {
     border-radius: 6px
     
 }
-
+.img-juegos :is(a) {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: red;
+    text-shadow:  2px 2px 4px black;
+    -webkit-text-stroke: 0.5px black;
+    border-radius: 6px
+    
+}
+/* Imagenes de los distintos juegos */
 #god-of-war {
  
     background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.405)),
@@ -171,10 +195,95 @@ th {
 
 #Age-of-Mythology {
   
-     background-image:radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Age-of-Mythology.jpg)
+     background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Age-of-Mythology.jpg)
 }
 
 #Hades {
   
-    background-image: url("ficus.png");
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/hades.png)
+}
+
+#Titan-Quest {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/TitanQuest.jpg)
+}
+
+#Immortals-Fenyx-Rising {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/immortals.jpg)
+}
+
+#Assassin’s-Creed-Odyssey {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/assassins.jpg)
+}
+
+#Zeus-Master-of-Olympus {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/zeus.jpg)
+}
+
+#Kid-Icarus {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Kid-Icarus.jpg)
+}
+
+#Apotheon {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Apotheon.jpg)
+}
+
+#Smite {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Smite.jpg)
+}
+
+#FATE-of-Hellas {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/FATE-of-Hellas.jpg)
+}
+
+#NyxQuest-Kindred-Spirits {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/NyxQuest-Kindred-Spirits.jpg)
+}
+
+#Theseus {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Theseus.jpg)
+}
+
+#Okhlos {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Okhlos.jpg)
+}
+
+#Rise-of-the-Argonauts {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Rise-of-the-Argonauts.jpg)
+}
+
+#Warriors-Legends-of-Troy {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/warrior.jpg)
+}
+
+#Asterigos-Curse-of-the-Stars {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Asterigos-Curse-of-the-Stars.jpg)
+}
+
+#Wrath-of-the-Gods {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Wrath-of-the-Gods.jpg)
+}
+
+#Mythos-Gods-Unleashed {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Mythos.jpg)
+}
+
+#Herculean-The-Legend-of-Hercules {
+  
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Herculean.jpg)
 }
