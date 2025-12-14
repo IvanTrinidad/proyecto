@@ -1,3 +1,4 @@
+/* Modificaciones a nievl general en todas las paginas , puesto que son elementos comunes de todas las paginas */
 header {
     margin-top: -80px;
     font-family: "Commodus Greek", sans-serif;
@@ -11,7 +12,7 @@ header {
     
 }
 .logo {
-    background-image: url(logo.png );
+    background-image: url(recursos/logo.png );
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
@@ -31,6 +32,14 @@ body {
     color: white;
     
 }
+footer{
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #671c1c;
+}
+/* Menu compartido entre todas las paginas */
 .nav-menu ul {
     
     list-style: none;
@@ -58,15 +67,22 @@ body {
     background: #290505;
     transition: 0.5s;
 }
+ /* Margenes de las distintas paginas , separadas por si hay que hacer cambios en alguna */
 .Inicio {
     margin-left: 60px;
     margin-right: 50px;
     margin-bottom: 15px;
 }
-
+.Juegos {
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+/* video de la pagina principal */
 video{
     margin-left: 60px;
 }
+/* Esta tabla pertenece a la pagina de incicio  */
 .tabla-1{
     
     width: auto;
@@ -101,4 +117,64 @@ th {
     
     color: rgb(255, 247, 247);
 }
+/* Imagenes/tarjetas de la pagina de juegos */
+.juegos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(465px, 1fr));
+    gap: 2rem;
+    padding: 1rem 2rem 2rem;
+}
+.img-juegos{
+  background-size: cover;
+    
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.421);
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    min-width: 444px;
 
+    width: auto;
+    height: auto;
+}
+.img-juegos:hover {
+    
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px var();
+}
+
+.img-juegos :is(h3) {
+
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    border-radius: 6px
+    
+}
+.img-juegos :is(p) {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    text-shadow:  2px 2px 4px black;
+    -webkit-text-stroke: 0.5px black;
+    border-radius: 6px
+    
+}
+
+#god-of-war {
+ 
+    background-image:  radial-gradient(transparent, rgba(41, 41, 41, 0.405)),
+    url(recursos/god-of-war.jpg);
+    
+}
+
+#Age-of-Mythology {
+  
+     background-image:radial-gradient(transparent, rgba(41, 41, 41, 0.57)), url(recursos/Age-of-Mythology.jpg)
+}
+
+#Hades {
+  
+    background-image: url("ficus.png");
+}
